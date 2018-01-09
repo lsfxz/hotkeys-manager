@@ -54,6 +54,7 @@ module GlobalHotkeysManager
         if mapped
           `xdotool windowmap #{id}`
           `xdotool windowactivate #{id}`
+          `wmctrl -r konsole -b add,fullscreen`
         else
           `xdotool windowunmap #{id}`
         end
